@@ -53,7 +53,8 @@ function writePokemon(data){
 
 function addToRecent (pokeName) {
 console.log(pokeName);
-//dont add dup to array
+
+//make rule to not add duplicate pokemon
 console.log(recents);
 if (recents.indexOf(pokeName) === -1) {
     recents.push(pokeName)
@@ -61,8 +62,8 @@ if (recents.indexOf(pokeName) === -1) {
     var capital = pokeName.charAt(0).toUpperCase() + pokeName.slice(1);
     addToList(capital);
 }
- } ;
-
+ }
+//for loop to add recents to list
  for (let i = 0; i < recents.length; i++) {
      console.log(recents[i].charAt(0).toUpperCase());
      console.log(recents[i].slice(1));
@@ -71,7 +72,7 @@ if (recents.indexOf(pokeName) === -1) {
  }
 
 
-//function to add pokemon
+//function to add pokemon (append)
 function addToList(pokeName){
     var listEl= $("<li>"+pokeName+"</li>");
     $(listEl).attr("class","list-group-item");
@@ -82,8 +83,13 @@ function addToList(pokeName){
         
     })
 }
+//clear list resets the page
+function clearHistory(){
+   // preventDefault();
+    $("#clear");
+    localStorage.clear();
+    document.location.reload();
+    preventDefault();
+}
 
-//var pokemonName = $("#pokemonName").textContent;
-//var savedLocal = localStorage.getItem()
-//var inputArea = $("#search-list")
 
