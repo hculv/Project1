@@ -25,10 +25,12 @@ body {
 h1 {
   font-weight: 700;
   color: #FFDE00;
-  font-family: kanit, Arial, Helvetica, sans-serif;
+  font-family: pokemon;
   margin-top: 15px;
   font-style: oblique; 
   font-size: 48px;
+  text-shadow: blue;
+  -webkit-text-stroke: 5px  #3C5AA6;
   
 }
 
