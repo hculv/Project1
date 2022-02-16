@@ -23,9 +23,9 @@ body {
 
 
 h1 {
-  font-weight: 700;
   color: #FFDE00;
-  font-family: pokemon;
+  -webkit-text-stroke: 5px #3C5AA6;
+  font-family: "pokemon", Arial, Helvetica, sans-serif;
   margin-top: 15px;
   font-style: oblique; 
   font-size: 48px;
@@ -36,8 +36,8 @@ h1 {
 
 h2 {
   font-weight: 700;
-  color:#FFDE00; 
-  font-family: kanit, sans-serif;
+  color: #FFDE00;
+  font-family: kanit, Arial, Helvetica, sans-serif;
   margin-top: 15px;
   font-style: oblique; 
     background-image: linear-gradient(60deg, green, blue, orange);
@@ -48,21 +48,15 @@ h2 {
 }
 
 #searchBar{
-  width: 95%;
+  width: 70%;
 }
-
-
-button.btn.btn-primary,#clear {
-  padding-left: 18px;
-  
-}
-
+git 
 
 button.btn.btn-primary {
   right: 0;
-  padding-top: 20px; /*20px*/
-  padding-bottom: 20px; /*20px*/
-  border-radius: 80%; /*80%*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 80%;
   background: linear-gradient(90deg, red, black);
   font-size: large;
   font-weight: 600;
@@ -76,6 +70,15 @@ button.btn.btn-primary {
   
 }
 
+button{
+  color: #FFDE00;
+  -webkit-text-stroke: 1px #3C5AA6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 #search-list li{
   margin: 5px;
@@ -342,6 +345,32 @@ form {
   box-shadow: 0px 5px 20px -10px #111111;
   border-style: solid;
   border-color: rgb(201, 0, 0);
+  border-width: 10px;
+}
+
+.ground {
+  background-image: linear-gradient(rgb(181, 101, 29), rgb(196, 164, 132));
+  display: inline-block;
+  width: 400px;
+  border-radius: 15px;  
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0px 5px 20px -10px #111111;
+  border-style: solid;
+  border-color: rgb(181, 101, 29);
+  border-width: 10px;
+}
+
+.poison {
+  background-image: linear-gradient(rgb(199, 0, 57), rgb(217, 130, 181));
+  display: inline-block;
+  width: 400px;
+  border-radius: 15px;  
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0px 5px 20px -10px #111111;
+  border-style: solid;
+  border-color: rgb(199, 0, 57);
   border-width: 10px;
 }
 
