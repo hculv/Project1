@@ -29,6 +29,8 @@ h1 {
   margin-top: 15px;
   font-style: oblique; 
   font-size: 48px;
+  text-shadow: blue;
+  -webkit-text-stroke: 5px  #3C5AA6;
   
 }
 
@@ -48,6 +50,7 @@ h2 {
 #searchBar{
   width: 70%;
 }
+git 
 
 
 button.btn.btn-primary {
@@ -56,13 +59,15 @@ button.btn.btn-primary {
   padding-bottom: 5px;
   border-radius: 80%;
   background: linear-gradient(90deg, red, black);
-  font-size: x-large;
+  font-size: large;
   font-weight: 600;
   font-style: oblique;
   color: #ffdf00;
-  border-width: thick;
+  border-width: thick; 
   border-color: black;
-  
+  padding: 0.3em 0.3em;	
+  margin-left: 4px;
+  text-align: center;
   
 }
 
@@ -87,6 +92,7 @@ i{
   font-weight: 600;
   font-style: oblique;
 }
+
 
 #search-list li:hover{
   cursor: pointer;
